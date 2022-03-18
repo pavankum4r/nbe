@@ -1,0 +1,179 @@
+html{
+    font-size: 62.5%;
+  }
+ 
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .bg{
+    
+    background-image: url("images/IMG_20201224_074443.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    z-index: 0;
+  }
+  .header{
+    color: rgb(168, 129, 57);
+    font-size:4rem;
+    padding-left: 2rem;
+    align-self: center;
+
+  }
+  .ul{
+    display:flex;
+    padding-right: 0.2rem;
+    padding-top: 1.5rem;
+    justify-content: space-evenly;
+    padding-bottom:1rem;
+    
+  }
+  .btn-menu{
+    display: none;
+  }
+  .ul a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding:0.3rem 1.5rem;
+    border: 0.3rem solid rgba(233, 164, 37, 0.767);
+    border-radius: 5px;
+    position: relative;
+    color:aliceblue
+  }
+
+  .main{
+    font-size: 8.2rem;
+    font-style:oblique;
+    color:orange;
+    top:40%;
+    left: 50%;
+    transform: translate(-50%,0);
+    position: absolute;
+    
+    
+  }
+
+  .visit{
+    font-size: 1.5rem;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,250%);
+    text-decoration: none;
+    color: white;
+    border:0.2rem;
+    border-style: solid;
+    border-radius: 0.6rem;
+    padding: 0.5rem 2rem;
+    background-color: rgb(20, 20, 196);
+  }
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: fixed;
+  background-color: rgba(0,0,0,0.8);
+  width:100vw;
+  
+
+}
+ 
+  .container{
+    
+    background-color: rgba(0,0,0,0.6);
+    height: 100vh;
+  }
+
+  .container2{
+    height: 100vh;
+    
+  }
+  .post{
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-content:center;
+      align-items: center;
+      row-gap: 5rem;
+      margin-bottom: 10rem;
+  }
+  
+  
+  .image{
+    align-self: center;
+    justify-self: center;
+    width:20vw;
+    height: 50vh;
+    
+  }
+  
+  
+  .six{
+  font-size: 3rem;
+  border: solid 5px black;
+  
+  text-decoration: none;
+  text-align:center;
+  
+  
+  
+  }
+.view{
+  text-decoration: none;
+  align-items:center;
+  margin-top: 11rem;
+  }
+  .svg{
+    margin-top: 11rem;
+  }
+
+
+@media (max-width:750px) {
+ 
+  .image{
+    width: 30vw;
+    height: 30vh;
+  }
+  
+  .ul{
+    grid-column: 2;
+  }
+  .ul a{
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    border: none;
+      
+    
+  }
+  .grid{
+    grid-template-columns:1fr ;
+    position:fixed;
+    background-color:rgba(0,0,0,0.8);
+    width: 100vw;
+  }
+
+  .post{
+    margin-top:8rem ;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 2rem;
+  }
+  .main{
+    font-size: 3.2rem;
+  }
+  .six{
+    font-size: 1.5rem;
+    align-self: center;
+  }
+  .view{
+    align-self: center;
+    
+    
+    
+  }
+  .svg{
+    margin-top: 6rem;
+  }
+  }
+
